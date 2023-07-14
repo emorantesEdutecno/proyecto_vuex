@@ -7,6 +7,8 @@
 </template>
 
 <style>
+/*@import "https://use.fontawesome.com/releases/v5.2.0/css/all.css";*/
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

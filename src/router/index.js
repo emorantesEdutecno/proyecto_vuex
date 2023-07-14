@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '../views/HomeView.vue';
+import NotFound from '@/components/NotFound.vue';
 
 const routes = [
   {
@@ -16,7 +17,12 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
     }
-  }
+  },
+  {
+    path: '/:catchAll(.*)',
+    name: 'notfound',
+    component: NotFound
+  },
 ]
 
 const router = createRouter({
